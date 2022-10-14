@@ -10,6 +10,7 @@ type Planets struct {
 	planetName    string
 	moons         []string
 	semimajoraxis float64
+	eccentricity  float64
 }
 type Animal struct {
 	Name   string `required max:"100"`
@@ -168,6 +169,7 @@ func main() {
 			"Thalassa",
 		},
 		semimajoraxis: 30.1,
+		eccentricity:  0.009,
 	}
 	fmt.Println(planet1)
 	fmt.Println(planet1.moons[2])
