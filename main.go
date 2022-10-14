@@ -171,6 +171,15 @@ func main() {
 		semimajoraxis: 30.1,
 		eccentricity:  0.009,
 	}
+	planet2 := Planets{
+		planetName: "Mars",
+		moons: []string{
+			"Phobos",
+			"Deimons",
+		},
+		semimajoraxis: 1.524,
+		eccentricity:  0.0934,
+	}
 	fmt.Println(planet1)
 	fmt.Println(planet1.moons[2])
 
